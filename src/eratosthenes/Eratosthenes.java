@@ -18,9 +18,10 @@ public class Eratosthenes {
      */
     public static void main(String[] args) {
         //create an array for of booleans that has an element for every number from 1-1000
-        boolean numbers[] = new boolean[1000];
+        boolean numbers[] = new boolean[1001];
         
         //set all values to true
+        numbers[0] = false;
         numbers[1] = false; 
         for(int i = 2; i < numbers.length; i++){
             numbers[i] = true;
